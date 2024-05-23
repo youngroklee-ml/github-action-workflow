@@ -8,7 +8,7 @@ date >> ./log.txt
 p=$(pwd)
 git config --global --add safe.directory $p
 
-if [[ "$(git status --porcelain)" != ""]]; then
+if [[ "$(git status --porcelain)" != "" ]]; then 
     git config --global user.name $USER_NAME
     git config --global user.email $USER_EMAIL
     git add ./log.txt
