@@ -5,6 +5,8 @@ on:
         - cron: "0 */1 * * *"
 jobs:
     time-logs:
+        permissions:
+            contents: write        
         runs-on: ubuntu-22.04
         container:
             image: rkrispin/data-pipeline-automation-with-github-actions:prod
