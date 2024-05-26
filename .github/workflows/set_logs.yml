@@ -2,7 +2,7 @@ name: Set Logs
 
 on:
     schedule:
-        - cron: "0 */1 * * *"
+        - cron: "45 4 * * 3"
 jobs:
     time-logs:
         permissions:
